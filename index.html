@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Nariman Jameel Design Hub</title>
+  <title>Dar Jameel Design Hub</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -163,22 +163,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">NARIMAN JAMEEL DESIGN HUB</a>
+      <a class="navbar-brand" href="#myPage">  DAR JAMEEL DESIGN HUB</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#MyPage">HOME</a></li>
-        <li><a href="#AboutUs">ABOUT US</a></li>
-        <li><a href="#Courses">COURSES</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#aboutus">ABOUT US</a></li>
+        <li><a href="#upcomingdates">COURSES</a></li>
         <li><a href="#Contact">CONTACT</a></li>
-        <li class="dropdown">
+
+        <!-- # the following code will make a drop down list (more) -->
+
+        <!-- <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
+          <span class="caret"></span></a> -->
+          <!-- <ul class="dropdown-menu">
             <li><a href="#">Events</a></li>
             <li><a href="#">Business</a></li>
             <li><a href="#">Portfolio</a></li> 
-          </ul>
+          </ul> -->
         </li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
@@ -235,7 +238,7 @@
 </div>
 
 <!-- Container (The Band Section) -->
-<div id="band" class="container text-center">
+<div id="aboutus" class="container text-center">
   <h3>ABOUT US</h3>
   <p><em>We love Learning for Fun!</em></p>
   <p>NJ Design Hub is an online learning program offered by architect Nariman Jameel to equip young talents across industries
@@ -285,14 +288,17 @@
 </div>
 
 <!-- Container (TOUR Section) -->
-<div id="tour" class="bg-1">
+<div id="upcomingdates" class="bg-1">
   <div class="container">
-    <h3 class="text-center">UPCOMING DATES 2022</h3>
+    <h3 class="text-center">Courses Calendar 2022/2023</h3>
     <p class="text-center">limited Seats are available in the following courses<br> Remember to book your seat!</p>
     <ul class="list-group">
-      <li class="list-group-item">21 Jun-24 Jul  I  Digital Painting and Sketching for Architects Course <span class="label label-danger">Sold Out!</span></li>
-      <li class="list-group-item">21 Aug-24 Sept I  Augmented Reality In Art and Architecture <span class="label label-danger">Sold Out!</span></li> 
-      <li class="list-group-item">21 Aug-24 Sept I  Extended Reality and Metaverse Architecture <span class="badge">4 Seats Available</span></li> 
+      <!-- <li class="list-group-item">3rd Cycle   I  Digital Painting and Sketching for Architects Course <span class="label label-danger">Sold Out!</span></li>
+      <li class="list-group-item">5th Cycle I  Augmented Reality In Art and Architecture <span class="label label-danger">Sold Out!</span></li>  -->
+      <li class="list-group-item">3rd Cycle   I  Digital Painting and Sketching for Architects <span class="label label-danger">2 Seats Available!</span></li>
+      <li class="list-group-item">5th Cycle I  Augmented Reality In Art and Architecture <span class="badge">5 Seats Available</span></li> 
+      <li class="list-group-item">2nd Cycle I  Extended Reality and Metaverse Architecture <span class="badge">4 Seats Available</span></li> 
+      <li class="list-group-item">1st Cycle I  Digital Fabrication and Arduino for Architects <span class="badge">5 Seats Available</span></li> 
     </ul>
     
     <div class="row text-center">
@@ -300,7 +306,7 @@
         <div class="thumbnail">
           <img src="imgs/no need images/future-girl-virtual-reality-headset-shutterstock_1341578870.jpg" alt="Paris" width="400" height="300">
           <p><strong>Digital Painting and Sketching for Artists and Architects</strong></p>
-          <p> 21st June 2022</p>
+          <p> Apply for more details</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">Apply</button>
         </div>
       </div>
@@ -308,7 +314,7 @@
         <div class="thumbnail">
           <img src="imgs/digi paint1.jpg" alt="Augmented Reality" width="400" height="300">
           <p><strong>Augmented Reality Applications for Artists and Architects</strong></p>
-          <p>21st August 2022</p>
+          <p>Apply for more details</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">Apply</button>
         </div>
       </div>
@@ -316,7 +322,7 @@
         <div class="thumbnail">
           <img src="imgs/ExtendedRealityXR.jpg" alt="San Francisco" width="400" height="300">
           <p><strong>Extended Reality and Metaverse Architecture Course</strong></p>
-          <p>21st August 2022</p>
+          <p>Apply for more details</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">Apply</button>
         </div>
       </div>
@@ -334,19 +340,40 @@
           <h4><span class="glyphicon glyphicon-lock"></span> Reserve A Seat</h4>
         </div>
         <div class="modal-body">
-          <form role="form" action="https://formsubmit.co/nariman.nashaat.gamil@gmail.com" method="POST">
+          <form role="form" action="https://formsubmit.co/43ed4bd2dbda8c6547df852c905b010b" method="POST">
+            <input type="text" name="_honey" style="display: none;"> <!--making honeypot to block spammers-->
+
+            <!-- to disable captcha-->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!--to insert my own thanks page-->
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/Success.html">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Student Name</label>
+              <input type="text" class="form-control" name="Name" id="usrname" placeholder="Enter your Name">
+            </div>
             <div class="form-group">
               <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Seat Reservation(s), $100 per seat</label>
-              <input type="number" class="form-control" id="psw" placeholder="How many?">
+              <input type="number" class="form-control" name="Number of Seats" id="psw" placeholder="How many?">
             </div>
             <div class="form-group">
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send Payment Details To Email</label>
-              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+              <input type="text" class="form-control" name="Email" id="usrname" placeholder="Enter email">
             </div>
           
             <div class="form-group">
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> Mobile Number (+20) </label>
-              <input type="text" class="form-control" id="usrname" placeholder="Enter Mobile/WhatsApp Number">
+              <input type="number" class="form-control" name="Phone" id="usrname" placeholder="Enter Mobile/WhatsApp Number">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Course Name</label>
+              <input type="text" class="form-control" name="Course Name" id="usrname" placeholder="Which Course are you applying for?">
+              <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <label for="vehicle1"> Digital Painting and Sketching</label><br>
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+              <label for="vehicle2"> Virtual Reality </label><br>
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+              <label for="vehicle3"> Augmented Reality</label><br> -->
             </div>
             <p> Confirm your email please as we will send you the course content/schedule and payment details via email. We are pleased to receive all your inquiries about the course content through WhatsApp number ( +20 114 005 2391 )</p>
               <button type="submit" class="btn btn-block">Send 
@@ -366,7 +393,7 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container">
+<div id="Contact" class="container">
   <h3 class="text-center">Contact</h3>
   <p class="text-center"><em>We love our fans!</em></p>
 
@@ -391,6 +418,7 @@
       <div class="row">
         <div class="col-md-12 form-group">
           <button class="btn pull-right" type="submit">Send</button>
+          <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Apply</button> -->
         </div>
       </div>
     </div>
@@ -406,14 +434,14 @@
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
       <h2>Nariman Jameel, Founder & Instructor</h2>
-      <p>Teaching Assistant at Modern Sciences and Arts University Architecture Dept. Professional Certified from University of San Diego California (AR/VR Application Developer)</p>
+      <p>Teaching Assistant at Modern Sciences and Arts University Architecture Dept. Professional Certified from University of California San Diego (AR/VR Application Developer), Cerified by Huawei Technologies in Artificial Intelligence (HCIA), Graduate of ACC AR/VR Diploma 2018. U.S.Embassy</p>
     </div>
     <div id="menu1" class="tab-pane fade">
-      <h2>Sarah Akiel, Co-Assistant and XR Developer</h2>
+      <h2>Sarah Akiel, Assistant</h2>
       <p>XR Developer at EG Gate</p>
     </div>
     <div id="menu2" class="tab-pane fade">
-      <h2>Peter Mikie, Instructor</h2>
+      <h2>Peter Mikie, Co-Assistant </h2>
       <p>Architect and XR Developer</p>
     </div>
   </div>
@@ -427,7 +455,7 @@
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>Sponsored by American Center in Cairo (ACC), USA Embassy, Cairo, Egypt  <a href="https://eg.usembassy.gov/education-culture/acc/" data-toggle="tooltip" title="Visit ACC">(www.eg.usembassy.gov)</a></p> 
+  <p>Sponsored by the American Center in Cairo (ACC), USA Embassy, Cairo, Egypt  <a href="https://eg.usembassy.gov/education-culture/acc/" data-toggle="tooltip" title="Visit ACC">(www.eg.usembassy.gov)</a></p> 
 </footer>
 
 <script>
